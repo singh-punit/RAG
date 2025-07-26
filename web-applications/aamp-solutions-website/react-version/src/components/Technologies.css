@@ -1,0 +1,101 @@
+.technologies {
+  padding: 6rem 0;
+  background: white;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+}
+
+.tech-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.tech-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.databricks-logo {
+  background: #ff3621;
+}
+
+.synapse-logo {
+  background: #7b68ee;
+}
+
+.fabric-logo {
+  background: #00bcf2;
+}
+
+.snowflake-logo {
+  background: #29b5e8;
+  font-size: 2rem;
+}
+
+.sql-logo {
+  background: #cc2927;
+}
+
+.powerbi-logo {
+  background: #f2c811;
+  color: #333;
+}
+
+.tech-item span {
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .tech-item {
+    padding: 1rem;
+  }
+
+  .tech-item img,
+  .tech-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tech-logo {
+    font-size: 1rem;
+  }
+
+  .snowflake-logo {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,132 @@
+.leadership {
+  padding: 6rem 0;
+  background: white;
+}
+
+.leader-profile {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.leader-image {
+  text-align: center;
+}
+
+.profile-placeholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.profile-placeholder i {
+  font-size: 4rem;
+  color: white;
+}
+
+.leader-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #0078d4;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.expertise h4,
+.achievements h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.expertise-tags span {
+  background: #e3f2fd;
+  color: #0078d4;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.expertise-tags span:hover {
+  transform: scale(1.05);
+}
+
+.achievements ul {
+  list-style: none;
+}
+
+.achievements li {
+  padding: 0.5rem 0;
+  color: #666;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.achievements li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #0078d4;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .leader-profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .profile-placeholder {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-placeholder i {
+    font-size: 3rem;
+  }
+
+  .leader-info h3 {
+    font-size: 1.8rem;
+  }
+
+  .expertise-tags {
+    justify-content: center;
+  }
+
+  .achievements {
+    text-align: left;
+  }
+}
